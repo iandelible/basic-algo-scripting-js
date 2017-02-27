@@ -1,6 +1,13 @@
-
 function largestOfFour(arr) {
-  // You can do this!
+  // initial idea
+  // loop through each element of the initial array
+  // sort each sub array 
+  // grab the last number of each sorted sub array
+  for (var i = 0; i < arr.length; i++) {
+    arr[i].sort(function(a,b) {
+      return a - b;
+    });
+  
   return arr;
 }
 
